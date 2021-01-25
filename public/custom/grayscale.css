@@ -102,7 +102,7 @@
   min-height: 35rem;
   padding: 15rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../images/bg_top.jpeg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../images/bg_top.jpeg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 1) 35%, rgba(22, 22, 22, 0.7) 70%, #161616 100%), url("../images/bg_top.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -335,3 +335,7 @@ footer {
   background:rgba(35, 35, 35, 10);
   padding: 16px 0;
 }
+
+/* .main-text{
+  background-image: radial-gradient(circle, rgba(182,27,0, 0.2), rgba(0,0,0,0.05));
+} */
