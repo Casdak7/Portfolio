@@ -35,13 +35,24 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+              <a class="nav-link js-scroll-trigger" href="#about" id="about_nav">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#projects" id="projects_nav">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" id="contact_nav">Contact</a>
+            </li>
+            <li style="display: flex; flex-direction: row; align-items: center;">
+              <a href="#" class="flag-link" language="portuguese">
+                <img class="flag-icon" src="./public/images/flags/brazil_flag.jpg">
+              </a>
+              <a href="#" class="flag-link active" language="english">
+                <img class="flag-icon" src="./public/images/flags/english_flag.jpg">
+              </a>
+            </li>
+            <li>
+
             </li>
           </ul>
         </div>
@@ -54,10 +65,10 @@
         <div class="mx-auto text-center">
           <div class="main-text">
             <h1 class="mx-auto my-0 text-uppercase text-black-50">Cassio Fernandes</h1>
-            <h2 class="text-white mx-auto mt-2 mb-5">Full Stack Web Developer with experience building solutions from start to finish</h2>
+            <h2 class="text-white mx-auto mt-2 mb-5" id="intro">Full Stack Web Developer with experience building solutions from start to finish</h2>
           </div>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">More About Me</a>
-          <a href="#projects" class="btn btn-primary js-scroll-trigger">See My Work</a>
+          <a href="#about" class="btn btn-primary js-scroll-trigger btn-page-top" id="btn_about">More About Me</a>
+          <a href="#projects" class="btn btn-primary js-scroll-trigger btn-page-top" id="btn_projects">See My Work</a>
         </div>
       </div>
     </header>
@@ -67,8 +78,8 @@
       <div class="container pb-5">
         <div class="row">
           <div class="col-lg-4 mx-auto">
-            <h2 class="text-white mb-4">Who am I?</h2>
-            <p class="text-white-50 text-left">
+            <h2 class="text-white mb-4" id="about_title">Who am I?</h2>
+            <p class="text-white-50 text-left" id="about_text">
               <!-- A Computer Technician and Fullstack Web Developer, currently coursing Computer Science at the Federal University of Espirito Santo. A fast learner who mainly works with PHP and the Laravel Framework but always strives to learn new technologies. -->
               Computer science student, computer technician and web developer with over three years of experience. Has worked as a team manager and developer in a great variety of projects. A fast learner who mainly works with PHP and the Laravel Framework but always strives to learn new technologies and is told to be very analytical.
               <br>
@@ -84,7 +95,7 @@
           <div class="col-lg-8 mx-auto">
             <div class="row">
               <div class="col-lg-12 mx-auto">
-                <h2 class="text-white mb-4">Skills</h2>
+                <h2 class="text-white mb-4" id="skills_title">Skills</h2>
               </div>
               <div class="col-lg-4 mx-auto">
                 <ul class="list-group">
@@ -153,15 +164,15 @@
               <div class="col-lg-4 mx-auto">
                 <ul class="list-group">
                   <li class="list-group-item d-flex justify-content-between align-items-center">
-                    English
+                    <span id="english">English</span>
                     <span class="badge badge-custom badge-pill">Fluent</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Portuguese
+                    <span id="portuguese">Portuguese</span>
                     <span class="badge badge-custom badge-pill">Native</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center">
-                    French
+                    <span id="french">French</span>
                     <span class="badge badge-custom badge-pill">Beginner</span>
                   </li>
                 </ul>
@@ -177,14 +188,14 @@
       <div class="container">
         <!-- Featured Project Row -->
         <div class="mx-auto text-center mb-5">
-          <h1>Projects</h1>
+          <h1 id="projects_title">Projects</h1>
         </div>
         <div class="row align-items-center no-gutters mb-5 mb-lg-5">
           <div class="col-xl-7 col-lg-8">
-            <div class="featured-text-left text-center text-lg-left">
-              <h4>Cardappin - <small>Freelancer</small></h4>
-              <a href="https://cardappin.com.br/">Visit Website</a>
-              <p class="text-black-50 mb-4">
+            <div class="featured-text-left text-center text-lg-left projects">
+              <h4><span id="title">Cardappin</span> - <small id="company">Freelancer</small></h4>
+              <a href="https://cardappin.com.br/" class="visit_site_link">Visit Website</a>
+              <p class="text-black-50 mb-4" id="text">
                 Online Menu and Ordering system for restaurants developed in C#, ASP.NET MVC. Provided support and updates since 2020, be it layout changes, UI and UX improvements, or new functionalities for the system.
               </p>
               <span class="badge badge-custom badge-pill">C#</span>
@@ -206,9 +217,9 @@
             <img class="img-fluid mb-3 mb-lg-0" style="width: 70%; height: auto" src="./public/images/projects/sorvemax.png" alt="">
           </div>
           <div class="col-xl-7 col-lg-8">
-            <div class="featured-text-right text-center text-lg-right">
-              <h4>Sorvemax - <small>Adapti Soluções Web</small></h4>
-              <p class="text-black-50 mb-4">
+            <div class="featured-text-right text-center text-lg-right projects">
+              <h4><span id="title">Sorvemax</span> - <small id="company">Adapti Soluções Web</small></h4>
+              <p class="text-black-50 mb-4" id="text">
                 Was the project manager, developed in PHP and the Laravel Framework. An ice cream factory management system that manages production, finance, sales, purchases, inventory, and more. Developed in 2018 and updated in 2020.
               </p>
               <span class="badge badge-custom badge-pill">PHP</span>
@@ -225,10 +236,10 @@
         </div>
         <div class="row align-items-center no-gutters mb-5 mb-lg-5">
           <div class="col-xl-7 col-lg-8">
-            <div class="featured-text-left text-center text-lg-left">
-              <h4>Apoio Educacional - <small>Freelancer</small></h4>
-              <a href="http://www.apoioeducacional.com/">Visit Website</a>
-              <p class="text-black-50 mb-4">
+            <div class="featured-text-left text-center text-lg-left projects">
+              <h4><span id="title">Apoio Educacional</span> - <small id="company">Freelancer</small></h4>
+              <a href="http://www.apoioeducacional.com/" class="visit_site_link">Visit Website</a>
+              <p class="text-black-50 mb-4" id="text">
                 Project developed in PHP and the Laravel Framework. A dynamic website and management system of teaching material, classes and enrollment. Also manages payments, teacher's salaries, timetables, attendance, online tests, and more. First version developed in 2017 and updated in 2019, in partnership with <a href="https://github.com/Joaovbf">João Vitor Barros Farias</a>.
               </p>
               <span class="badge badge-custom badge-pill">PHP</span>
@@ -250,9 +261,9 @@
             <img class="img-fluid mb-3 mb-lg-0" style="width: 90%; height: auto" src="./public/images/projects/prefeitura_edit.png" alt="">
           </div>
           <div class="col-xl-7 col-lg-8">
-            <div class="featured-text-right text-center text-lg-right">
-              <h4>Selective Process São Mateus - <small>Adapti Soluções Web</small></h4>
-              <p class="text-black-50 mb-4">
+            <div class="featured-text-right text-center text-lg-right projects">
+              <h4><span id="title">Selective Process São Mateus</span> - <small id="company">Adapti Soluções Web</small></h4>
+              <p class="text-black-50 mb-4" id="text">
                 System created for symplifying the selective and hiring process of the department of health of the city of São Mateus. It received a few thousand applications of medical professionals. The system dealt with all applications for all different openings, with an intuitively layout and a robust backend. It was developed in a month by a team of three people.
               </p>
               <span class="badge badge-custom badge-pill">PHP</span>
@@ -269,10 +280,10 @@
         </div>
         <div class="row align-items-center no-gutters mb-5 mb-lg-5">
           <div class="col-xl-7 col-lg-8">
-            <div class="featured-text-left text-center text-lg-left">
-              <h4>Arte da Gente - <small>Adapti Soluções Web</small></h4>
-              <a href="https://lojaartedagente.com.br/">Visit Website</a>
-              <p class="text-black-50 mb-4">
+            <div class="featured-text-left text-center text-lg-left projects">
+              <h4><span id="title">Arte da Gente</span> - <small id="company">Adapti Soluções Web</small></h4>
+              <a href="https://lojaartedagente.com.br/" class="visit_site_link">Visit Website</a>
+              <p class="text-black-50 mb-4" id="text">
                 Project developed in PHP and the Laravel Framework. A dynamic website and management system of an art store. 
               </p>
               <span class="badge badge-custom badge-pill">PHP</span>
@@ -303,7 +314,7 @@
             <div class="card py-4 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Endereço</h4>
+                <h4 class="text-uppercase m-0" id="address">Address</h4>
                 <hr class="my-4">
                 <div class="small text-black-50">São Mateus</div>
               </div>
@@ -342,6 +353,9 @@
           <a href="https://github.com/Casdak7" class="mx-2">
             <i class="fab fa-github"></i>
           </a>
+          <a href="https://www.linkedin.com/in/cassio-fernandes-970b60152/" class="mx-2">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
   
       </div>
@@ -365,8 +379,42 @@
     <!-- Custom scripts for this template -->
     <script src="./public/custom/grayscale.min.js"></script>
     <script src="./public/custom/custom.js"></script>
-  
-  
+    <script>
+      
+      $('.flag-link').on('click', function (e){
+        e.preventDefault();
+
+        const selected_language = $(this).attr('language')
+
+        $('#about_nav').html(languages[selected_language].about_nav)
+        $('#projects_nav').html(languages[selected_language].projects_nav)
+        $('#contact_nav').html(languages[selected_language].contact_nav)
+        $('#intro').html(languages[selected_language].intro)
+        $('#btn_about').html(languages[selected_language].btn_about)
+        $('#btn_projects').html(languages[selected_language].btn_projects)
+        $('#about_title').html(languages[selected_language].about_title)
+        $('#about_text').html(languages[selected_language].about_text)
+        $('#skills_title').html(languages[selected_language].skills_title)
+        $('#english').html(languages[selected_language].english)
+        $('#portuguese').html(languages[selected_language].portuguese)
+        $('#french').html(languages[selected_language].french)
+        $('#projects_title').html(languages[selected_language].projects_title)
+        $('.visit_site_link').html(languages[selected_language].visit_site_link)
+        
+        let key = 0
+        $('.projects').toArray().forEach(element => {
+          $(element).find("#title").html(languages[selected_language].projects_section[key].title)
+          $(element).find("#company").html(languages[selected_language].projects_section[key].company)
+          $(element).find("#text").html(languages[selected_language].projects_section[key].text)
+          key++
+        })
+        
+        $('#address').html(languages[selected_language].address)
+
+        $('.flag-link').removeClass('active')
+        $(this).addClass('active')
+      })
+    </script>
   
   
   </body></html>

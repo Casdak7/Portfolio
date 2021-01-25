@@ -336,6 +336,25 @@ footer {
   padding: 16px 0;
 }
 
-/* .main-text{
-  background-image: radial-gradient(circle, rgba(182,27,0, 0.2), rgba(0,0,0,0.05));
-} */
+.flag-icon{
+  height: 25px;
+  margin: 8px 4px;
+}
+
+.flag-link > .flag-icon{
+  filter: grayscale(100%);
+}
+
+.flag-link:hover > .flag-icon{
+  filter: grayscale(0%);
+}
+
+.flag-link.active > .flag-icon{
+  filter: grayscale(0%);
+}
+
+@media (max-width: 431) {
+  .btn-page-top {
+    margin: 8px 0;
+  }
+}
